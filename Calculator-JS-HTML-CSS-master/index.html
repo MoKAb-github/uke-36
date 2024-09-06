@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Calculator</title>
+    <div class = "Title">
+        <H1> My first online calculator</H1>
+
+    </div>
+
+    <!-- internal CSS section  -->
+    <style>
+        body{ 
+            background-image: url('/image/bg.jpg');
+            background-size: cover;      
+        }
+        .Title{
+            text-align: center;
+            font-size: 30px;
+        }
+        .buttons{
+            text-align: center;
+            font-size: 25px;
+            color:rgb(0, 81, 255);
+        }
+        .result{
+            text-align: center;
+            font-size: 42px;
+            font-style: Monospace;
+            color:rgb(24, 11, 11);
+        }
+    </style>
+    
+    
+   
+</head>
+
+<body>
+
+    <div class ="buttons">
+        <label for="digit1">Your first number here </label>
+        <input type="number" placeholder="your number please" id="digit1" /><br>
+        <label for="digit2">Your second number here </label>
+        <input type="number" placeholder="your number please" id="digit2"><br>
+        <p><strong>PLEASE CHOOSE AN OPERATION</strong></p> <br>
+
+    
+        <p> <strong> Click here to ADD</strong> </p><input type="button" value="SUM" onclick="add()"/><br>
+        <p> <strong> Click here to SUBTRACT</strong> </p><input type="button" value="SUBTRACTION" onclick="subtraction()"/><br>
+        <p> <strong> Click here to DIVIDE</strong> </p><input type="button" value="DIVISION" onclick="division()"/><br>
+        <p> <strong> Click here to MULTIPLY</strong> </p><input type="button" value="MULTIPLICATION" onclick="multi()"/><br>
+       
+
+    </div>
+    
+
+        
+  
+   
+
+    <script src="/source/index.js">
+
+
+
+
+    </script>
+    <div class = "result" >
+
+        <p> THE RESULT OF CURRENT OPERATION IS:<br> <p id="result"></p> </p> <br>
+
+    </div>
+    
+   
+   
+    
+</body>
+</html>
